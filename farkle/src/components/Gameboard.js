@@ -6,10 +6,14 @@ export default function Gameboard(props) {
 
 
     return(
-        <div className='container-xl'>
-            <div className='card bg-info' style={{flexDirection: 'row', justifyContent: 'space-between'}}>
-                <Dice value='1' />
-            </div>
+        <div className='container bg-info' style={{border:'solid 2px black', display: 'flex', flexFlow: 'row nowrap', justifyContent: 'space-between', maxWidth: '540px'}}>
+            <Dice value='2' />
+            <Dice value='5' />
+            <Dice value='3' />
+            <Dice value='4' />
+            <Dice value='1' />
+            <Dice value='6' />
         </div>
+
     )
 }
